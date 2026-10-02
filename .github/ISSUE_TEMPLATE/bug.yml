@@ -1,0 +1,45 @@
+name: Bug report
+description: A reproducible failure in the scanner, worker, relay, or Quest viewer
+title: "[Bug]: "
+labels:
+  - type:bug
+body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - iPad scanner
+        - Geometry processing
+        - Texture reconstruction
+        - Relay service
+        - Quest viewer
+        - Shared contracts or tools
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and evidence
+      description: Include commit, Unity/package versions, device/OS, logs, and captures.
+    validations:
+      required: true
+

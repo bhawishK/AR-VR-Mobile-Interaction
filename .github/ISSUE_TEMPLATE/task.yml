@@ -1,0 +1,41 @@
+name: Development task
+description: A scoped implementation or integration task
+title: "[Task]: "
+labels:
+  - type:feature
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: Describe the observable result, not only the implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: List what is included and explicitly excluded.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Use measurable checks and include the target device when relevant.
+      placeholder: |
+        - [ ] Criterion one
+        - [ ] Criterion two
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Link blocking issues, data fixtures, hardware, or external tools.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Verification evidence
+      description: Tests, logs, screenshots, measurements, or device-build evidence.
+

@@ -1,0 +1,45 @@
+name: Research spike
+description: A time-boxed investigation that ends with evidence and a decision
+title: "[Spike]: "
+labels:
+  - type:spike
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Decision question
+      description: State the exact uncertainty this spike must resolve.
+    validations:
+      required: true
+  - type: input
+    id: timebox
+    attributes:
+      label: Time box
+      placeholder: Two working days
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options to evaluate
+    validations:
+      required: true
+  - type: textarea
+    id: measures
+    attributes:
+      label: Evaluation measures
+      description: Include quality, effort, performance, compatibility, and licensing.
+    validations:
+      required: true
+  - type: textarea
+    id: completion
+    attributes:
+      label: Completion criteria
+      placeholder: |
+        - [ ] Reproducible prototype or experiment
+        - [ ] Measurements attached
+        - [ ] Architecture decision recorded
+        - [ ] Follow-up issues created
+    validations:
+      required: true
+
