@@ -1,0 +1,47 @@
+# Unity generated files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# IDE files
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local captures, models, exports, and credentials
+captures/
+datasets/private/
+models/local/
+room-packages/
+*.ipa
+*.apk
+*.aab
+*.keystore
+*.p12
+*.mobileprovision
+.env
+.env.*
+
+# Local Codex and scratch output
+.codex-tmp/
+tmp/
+
